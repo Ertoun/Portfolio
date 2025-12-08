@@ -19,7 +19,7 @@ const projects = [
         id: 3,
         title: "Eco-Friendly Packaging",
         category: "Print Design",
-        image: "https://images.unsplash.com/photo-1629856575971-da0c279c656d?auto=format&fit=crop&q=80&w=2000",
+        image: "https://images.unsplash.com/photo-1482876555840-f31c5ebbff1c?q=80&w=1171",
     },
     {
         id: 4,

@@ -1,4 +1,4 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 
@@ -31,10 +31,10 @@ const Hero = () => {
                     transition={{ duration: 0.6, delay: 0.4 }}
                     className="flex flex-col sm:flex-row gap-4"
                 >
-                    <button className="px-8 py-4 bg-neutral-900 text-white rounded-full font-semibold hover:bg-neutral-800 transition-all flex items-center justify-center gap-2 group">
+                    <Link to="/projects" className="px-8 py-4 bg-neutral-900 text-white rounded-full font-semibold hover:bg-neutral-800 transition-all flex items-center justify-center gap-2 group">
                         View Projects
                         <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                    </button>
+                    </Link>
                     <button className="px-8 py-4 border border-neutral-200 text-neutral-900 rounded-full font-semibold hover:bg-white hover:border-neutral-300 transition-all">
                         Get in touch
                     </button>
