@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 
@@ -35,9 +36,9 @@ const Hero = () => {
                         View Projects
                         <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </Link>
-                    <button className="px-8 py-4 border border-neutral-200 text-neutral-900 rounded-full font-semibold hover:bg-white hover:border-neutral-300 transition-all">
+                    <HashLink smooth to="/#contact" className="px-8 py-4 border border-neutral-200 text-neutral-900 rounded-full font-semibold hover:bg-white hover:border-neutral-300 transition-all flex items-center justify-center">
                         Get in touch
-                    </button>
+                    </HashLink>
                 </motion.div>
             </div>
         </section>
