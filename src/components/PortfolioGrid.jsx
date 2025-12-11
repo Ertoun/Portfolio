@@ -7,19 +7,19 @@ const projects = [
         id: 1,
         title: "Brand Identity Redesign",
         category: "Branding",
-        image: "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&q=80&w=2000",
+        image: "https://images.unsplash.com/photo-1541506618330-7c369fc759b5?auto=format&fit=crop&q=80&w=2000",
     },
     {
         id: 2,
-        title: "E-commerce Mobile App",
+        title: "Design System",
         category: "UI/UX Design",
-        image: "https://images.unsplash.com/photo-1555421689-491a97ff2040?auto=format&fit=crop&q=80&w=2000",
+        image: "https://images.unsplash.com/photo-1560461396-ec0ef7bb29dd?auto=format&fit=crop&q=80&w=2000",
     },
     {
         id: 3,
         title: "Eco-Friendly Packaging",
         category: "Print Design",
-        image: "https://images.unsplash.com/photo-1482876555840-f31c5ebbff1c?q=80&w=1171",
+        image: "https://images.unsplash.com/photo-1482876555840-f31c5ebbff1c?auto=format&fit=crop&q=80&w=2000",
     },
     {
         id: 4,
@@ -69,11 +69,11 @@ const PortfolioGrid = () => {
                 ))}
             </div>
 
-            <div className="mt-12 text-center md:hidden">
+            {/* <div className="mt-12 text-center md:hidden">
                 <a href="#" className="inline-flex items-center gap-2 text-indigo-600 font-medium">
                     View all projects <ExternalLink className="w-4 h-4" />
                 </a>
-            </div>
+            </div> */}
         </section>
     );
 };

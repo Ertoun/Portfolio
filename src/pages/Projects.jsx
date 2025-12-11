@@ -13,10 +13,14 @@ const Projects = () => {
                 <p className="text-xl text-neutral-600 max-w-2xl mb-12">
                     A collection of my work in UX/UI design, branding, and development.
                 </p>
+                <p className="text-xl text-neutral-600 max-w-2xl mb-12">
+                    This section is currently under construction. Please check back soon for updates!
+                </p>
             </motion.div>
 
+            {/*
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {/* Placeholder for more projects - reusing structure implies consistency */}
+                {/* Placeholder for more projects - reusing structure implies consistency }
                 <div className="bg-neutral-100 rounded-2xl aspect-[4/3] flex items-center justify-center text-neutral-400">
                     Project 1
                 </div>
@@ -27,6 +31,7 @@ const Projects = () => {
                     Project 3
                 </div>
             </div>
+            */}
         </main>
     );
 };

@@ -37,7 +37,7 @@ const Header = () => {
                         className="flex items-center gap-2 px-5 py-2.5 bg-neutral-900 text-white rounded-full text-sm font-semibold hover:bg-neutral-800 transition-all"
                     >
                         <Download className="w-4 h-4" />
-                        <span>Resume</span>
+                        <span>Download Portfolio</span>
                     </a>
                 </nav>
 
@@ -74,7 +74,7 @@ const Header = () => {
                                 className="flex items-center justify-center gap-2 px-4 py-2 bg-indigo-600 text-white rounded-full text-sm font-semibold w-full"
                             >
                                 <Download className="w-4 h-4" />
-                                <span>Download PDF</span>
+                                <span>Download Portfolio</span>
                             </a>
                         </div>
                     </motion.nav>
