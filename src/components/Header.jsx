@@ -85,12 +85,12 @@ const Header = () => {
                                 <span>Download Portfolio</span>
                             </a>
                             <a
-                                href="/resume UX Designer.pdf"
+                                href="/resume_UX_Designer.pdf"
                                 download="Resume_UX_Designer.pdf"
                                 className="flex items-center justify-center gap-2 px-4 py-2 bg-white border border-neutral-200 text-neutral-900 rounded-full text-sm font-semibold w-full"
                             >
                                 <FileText className="w-4 h-4" />
-                                <span>Resume</span>
+                                <span>Download Resume</span>
                             </a>
                         </div>
                     </motion.nav>
