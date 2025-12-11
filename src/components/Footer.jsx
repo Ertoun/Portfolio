@@ -9,9 +9,9 @@ const Footer = () => {
                     © {new Date().getFullYear()} Design Portfolio. All rights reserved.
                 </div>
                 <div className="flex gap-6">
-                    <a href="#" className="text-neutral-400 hover:text-indigo-600 transition-colors"><Github className="w-5 h-5" /></a>
-                    <a href="#" className="text-neutral-400 hover:text-indigo-600 transition-colors"><Linkedin className="w-5 h-5" /></a>
-                    <a href="#" className="text-neutral-400 hover:text-indigo-600 transition-colors"><Mail className="w-5 h-5" /></a>
+                    <a target="_blank" href="https://github.com/Ertoun" className="text-neutral-400 hover:text-indigo-600 transition-colors"><Github className="w-5 h-5" /></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/ertan-ozaydin/" className="text-neutral-400 hover:text-indigo-600 transition-colors"><Linkedin className="w-5 h-5" /></a>
+                    <a target="_blank" href="mailto:ertanozaydin@gmail.com" className="text-neutral-400 hover:text-indigo-600 transition-colors"><Mail className="w-5 h-5" /></a>
                 </div>
             </div>
         </footer>

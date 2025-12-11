@@ -1,5 +1,5 @@
 import React from 'react';
-import { Menu, X, Download } from 'lucide-react';
+import { Menu, X, Download, FileText } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link, useLocation } from 'react-router-dom';
 
@@ -39,6 +39,14 @@ const Header = () => {
                         <Download className="w-4 h-4" />
                         <span>Download Portfolio</span>
                     </a>
+                    <a
+                        href="/resume UX Designer.pdf"
+                        download="Resume_UX_Designer.pdf"
+                        className="flex items-center gap-2 px-5 py-2.5 bg-white border border-neutral-200 text-neutral-900 rounded-full text-sm font-semibold hover:bg-neutral-50 transition-all"
+                    >
+                        <FileText className="w-4 h-4" />
+                        <span>Download Resume</span>
+                    </a>
                 </nav>
 
                 {/* Mobile Toggle */}
@@ -75,6 +83,14 @@ const Header = () => {
                             >
                                 <Download className="w-4 h-4" />
                                 <span>Download Portfolio</span>
+                            </a>
+                            <a
+                                href="/resume UX Designer.pdf"
+                                download="Resume_UX_Designer.pdf"
+                                className="flex items-center justify-center gap-2 px-4 py-2 bg-white border border-neutral-200 text-neutral-900 rounded-full text-sm font-semibold w-full"
+                            >
+                                <FileText className="w-4 h-4" />
+                                <span>Resume</span>
                             </a>
                         </div>
                     </motion.nav>
