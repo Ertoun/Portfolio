@@ -32,12 +32,12 @@ const projects = [
 const PortfolioGrid = () => {
     return (
         <section className="py-20" id="work">
-            <div className="flex justify-between items-end mb-12">
+            {/* <div className="flex justify-between items-end mb-12">
                 <h2 className="text-3xl md:text-4xl font-bold text-neutral-900">Selected Work</h2>
                 <a href="#" className="hidden md:flex items-center gap-2 text-indigo-600 font-medium hover:text-indigo-700">
                     View all projects <ExternalLink className="w-4 h-4" />
                 </a>
-            </div>
+            </div> */}
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
                 {projects.map((project, index) => (
