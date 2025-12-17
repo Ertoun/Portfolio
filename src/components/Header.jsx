@@ -1,15 +1,17 @@
 import React from 'react';
-import { Menu, X, Download, FileText } from 'lucide-react';
+import { Menu, X, Download, FileText, Globe } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link, useLocation } from 'react-router-dom';
+import { useLanguage } from '../context/LanguageContext';
 
 const Header = () => {
     const [isOpen, setIsOpen] = React.useState(false);
     const location = useLocation();
+    const { t, language, toggleLanguage } = useLanguage();
 
     const links = [
-        { name: 'Home', path: '/' },
-        { name: 'Projects', path: '/projects' },
+        { name: t.header.home, path: '/' },
+        { name: t.header.projects, path: '/projects' },
     ];
 
     return (
@@ -23,7 +25,7 @@ const Header = () => {
                 <nav className="hidden md:flex items-center gap-8">
                     {links.map((link) => (
                         <Link
-                            key={link.name}
+                            key={link.path}
                             to={link.path}
                             className={`text-sm font-medium transition-colors ${location.pathname === link.path ? 'text-indigo-600' : 'text-neutral-600 hover:text-neutral-900'
                                 }`}
@@ -31,13 +33,22 @@ const Header = () => {
                             {link.name}
                         </Link>
                     ))}
+
+                    <button
+                        onClick={toggleLanguage}
+                        className="flex items-center gap-1 text-sm font-medium text-neutral-600 hover:text-neutral-900 transition-colors"
+                    >
+                        <Globe className="w-4 h-4" />
+                        <span>{language === 'en' ? 'FR' : 'EN'}</span>
+                    </button>
+
                     <a
                         href="/Portfolio/portfolio.pdf"
                         download="portfolio.pdf"
                         className="flex items-center gap-2 px-5 py-2.5 bg-neutral-900 text-white rounded-full text-sm font-semibold hover:bg-neutral-800 transition-all"
                     >
                         <Download className="w-4 h-4" />
-                        <span>Download Portfolio</span>
+                        <span>{t.header.downloadPortfolio}</span>
                     </a>
                     <a
                         href="/Portfolio/resume_UX_Designer.pdf"
@@ -45,14 +56,23 @@ const Header = () => {
                         className="flex items-center gap-2 px-5 py-2.5 bg-white border border-neutral-200 text-neutral-900 rounded-full text-sm font-semibold hover:bg-neutral-50 transition-all"
                     >
                         <FileText className="w-4 h-4" />
-                        <span>Download Resume</span>
+                        <span>{t.header.downloadResume}</span>
                     </a>
                 </nav>
 
                 {/* Mobile Toggle */}
-                <button onClick={() => setIsOpen(!isOpen)} className="md:hidden p-2 text-neutral-600">
-                    {isOpen ? <X /> : <Menu />}
-                </button>
+                <div className="flex items-center gap-4 md:hidden">
+                    <button
+                        onClick={toggleLanguage}
+                        className="flex items-center gap-1 text-sm font-medium text-neutral-600"
+                    >
+                        <Globe className="w-4 h-4" />
+                        <span>{language === 'en' ? 'FR' : 'EN'}</span>
+                    </button>
+                    <button onClick={() => setIsOpen(!isOpen)} className="p-2 text-neutral-600">
+                        {isOpen ? <X /> : <Menu />}
+                    </button>
+                </div>
             </div>
 
             {/* Mobile Nav */}
@@ -67,7 +87,7 @@ const Header = () => {
                         <div className="flex flex-col p-4 gap-4">
                             {links.map((link) => (
                                 <Link
-                                    key={link.name}
+                                    key={link.path}
                                     to={link.path}
                                     onClick={() => setIsOpen(false)}
                                     className={`text-lg font-medium ${location.pathname === link.path ? 'text-indigo-600' : 'text-neutral-600'
@@ -82,7 +102,7 @@ const Header = () => {
                                 className="flex items-center justify-center gap-2 px-4 py-2 bg-indigo-600 text-white rounded-full text-sm font-semibold w-full"
                             >
                                 <Download className="w-4 h-4" />
-                                <span>Download Portfolio</span>
+                                <span>{t.header.downloadPortfolio}</span>
                             </a>
                             <a
                                 href="/Portfolio/resume_UX_Designer.pdf"
@@ -90,7 +110,7 @@ const Header = () => {
                                 className="flex items-center justify-center gap-2 px-4 py-2 bg-white border border-neutral-200 text-neutral-900 rounded-full text-sm font-semibold w-full"
                             >
                                 <FileText className="w-4 h-4" />
-                                <span>Download Resume</span>
+                                <span>{t.header.downloadResume}</span>
                             </a>
                         </div>
                     </motion.nav>

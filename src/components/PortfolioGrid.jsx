@@ -1,35 +1,18 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
 
-const projects = [
-    {
-        id: 1,
-        title: "Brand Identity Redesign",
-        category: "Branding",
-        image: "https://images.unsplash.com/photo-1541506618330-7c369fc759b5?auto=format&fit=crop&q=80&w=2000",
-    },
-    {
-        id: 2,
-        title: "Design System",
-        category: "UI/UX Design",
-        image: "https://images.unsplash.com/photo-1560461396-ec0ef7bb29dd?auto=format&fit=crop&q=80&w=2000",
-    },
-    {
-        id: 3,
-        title: "Eco-Friendly Packaging",
-        category: "Print Design",
-        image: "https://images.unsplash.com/photo-1482876555840-f31c5ebbff1c?auto=format&fit=crop&q=80&w=2000",
-    },
-    {
-        id: 4,
-        title: "Finance Dashboard",
-        category: "Product Design",
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=2000",
-    },
-];
+const projectImages = {
+    1: "https://images.unsplash.com/photo-1541506618330-7c369fc759b5?auto=format&fit=crop&q=80&w=2000",
+    2: "https://images.unsplash.com/photo-1560461396-ec0ef7bb29dd?auto=format&fit=crop&q=80&w=2000",
+    3: "https://images.unsplash.com/photo-1482876555840-f31c5ebbff1c?auto=format&fit=crop&q=80&w=2000",
+    4: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=2000",
+};
 
 const PortfolioGrid = () => {
+    const { t } = useLanguage();
+
     return (
         <section className="py-20" id="work">
             {/* <div className="flex justify-between items-end mb-12">
@@ -40,7 +23,7 @@ const PortfolioGrid = () => {
             </div> */}
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
-                {projects.map((project, index) => (
+                {t.projects.items.map((project, index) => (
                     <motion.div
                         key={project.id}
                         initial={{ opacity: 0, y: 20 }}
@@ -51,7 +34,7 @@ const PortfolioGrid = () => {
                     >
                         <div className="aspect-[4/3] overflow-hidden rounded-2xl bg-neutral-100 mb-4 relative">
                             <img
-                                src={project.image}
+                                src={projectImages[project.id]}
                                 alt={project.title}
                                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                             />

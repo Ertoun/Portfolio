@@ -2,8 +2,11 @@ import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
 
 const Hero = () => {
+    const { t } = useLanguage();
+
     return (
         <section className="min-h-[80vh] flex flex-col justify-center py-20">
             <div className="max-w-4xl">
@@ -13,7 +16,7 @@ const Hero = () => {
                     transition={{ duration: 0.6 }}
                 >
                     <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-neutral-900 leading-[1.1] mb-8">
-                        Designing experiences that <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-600">inspire</span> and <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-500">connect</span>.
+                        {t.hero.titlePlain1}<span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-600">{t.hero.titleHighlight1}</span>{t.hero.titlePlain2}<span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-500">{t.hero.titleHighlight2}</span>{t.hero.titlePlain3}
                     </h1>
                 </motion.div>
 
@@ -23,7 +26,7 @@ const Hero = () => {
                     transition={{ duration: 0.6, delay: 0.2 }}
                     className="text-xl md:text-2xl text-neutral-600 max-w-2xl leading-relaxed mb-12"
                 >
-                    Hello, I'm a UX Designer based in Paris. I specialize in crafting intuitive user interfaces and delightful digital products.
+                    {t.hero.description}
                 </motion.p>
 
                 <motion.div
@@ -37,7 +40,7 @@ const Hero = () => {
                         <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </Link> */}
                     <HashLink smooth to="/#contact" className="px-8 py-4 border border-neutral-200 text-neutral-900 rounded-full font-semibold hover:bg-white hover:border-neutral-300 transition-all flex items-center justify-center">
-                        Get in touch
+                        {t.hero.cta}
                     </HashLink>
                 </motion.div>
             </div>

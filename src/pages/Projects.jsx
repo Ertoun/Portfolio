@@ -1,7 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useLanguage } from '../context/LanguageContext';
 
 const Projects = () => {
+    const { t } = useLanguage();
+
     return (
         <main className="container mx-auto px-4 md:px-8 py-20">
             <motion.div
@@ -9,12 +12,12 @@ const Projects = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
             >
-                <h1 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-8">All Projects</h1>
+                <h1 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-8">{t.projects.title}</h1>
                 <p className="text-xl text-neutral-600 max-w-2xl mb-12">
-                    A collection of my work in UX/UI design, branding, and development.
+                    {t.projects.subtitle}
                 </p>
                 <p className="text-xl text-neutral-600 max-w-2xl mb-12">
-                    This section is currently under construction. Please check back soon for updates!
+                    {t.projects.construction}
                 </p>
             </motion.div>
 
