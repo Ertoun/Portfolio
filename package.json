@@ -10,13 +10,15 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "clean": "rmdir /s /q node_modules && del package-lock.json && npm install && npm run dev"
   },
   "dependencies": {
     "framer-motion": "^12.23.25",
     "lucide-react": "^0.556.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-pdf": "^10.3.0",
     "react-router-dom": "^7.10.1",
     "react-router-hash-link": "^2.4.3"
   },

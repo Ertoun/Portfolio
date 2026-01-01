@@ -4,6 +4,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Link, useLocation } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import ThemeToggle from './ThemeToggle';
+import portfolioPdf from '../assets/portfolio.pdf';
+import resumePdf from '../assets/resume_UX_Designer.pdf';
 
 const Header = () => {
     const [isOpen, setIsOpen] = React.useState(false);
@@ -46,7 +48,7 @@ const Header = () => {
                     </button>
 
                     <a
-                        href="/Portfolio/portfolio.pdf"
+                        href={portfolioPdf}
                         download="portfolio.pdf"
                         className="flex items-center gap-2 px-5 py-2.5 bg-primary text-background rounded-full text-sm font-semibold hover:opacity-90 transition-all"
                     >
@@ -54,7 +56,7 @@ const Header = () => {
                         <span>{t.header.downloadPortfolio}</span>
                     </a>
                     <a
-                        href="/Portfolio/resume_UX_Designer.pdf"
+                        href={resumePdf}
                         download="resume_UX_Designer.pdf"
                         className="flex items-center gap-2 px-5 py-2.5 bg-background border border-secondary text-primary rounded-full text-sm font-semibold hover:bg-secondary transition-all"
                     >
@@ -101,7 +103,7 @@ const Header = () => {
                                 </Link>
                             ))}
                             <a
-                                href="/Portfolio/portfolio.pdf"
+                                href={portfolioPdf}
                                 download="resume_portfolio.pdf"
                                 className="flex items-center justify-center gap-2 px-4 py-2 bg-accent text-white rounded-full text-sm font-semibold w-full"
                             >
@@ -109,7 +111,7 @@ const Header = () => {
                                 <span>{t.header.downloadPortfolio}</span>
                             </a>
                             <a
-                                href="/Portfolio/resume_UX_Designer.pdf"
+                                href={resumePdf}
                                 download="resume_UX_Designer.pdf"
                                 className="flex items-center justify-center gap-2 px-4 py-2 bg-background border border-secondary text-primary rounded-full text-sm font-semibold w-full"
                             >
