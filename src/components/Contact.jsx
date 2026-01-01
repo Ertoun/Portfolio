@@ -6,10 +6,10 @@ const Contact = () => {
     const { t } = useLanguage();
 
     return (
-        <section className="py-20 bg-white" id="contact">
+        <section className="py-20 bg-background" id="contact">
             <div className="max-w-4xl mx-auto text-center">
-                <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-8">{t.contact.title}</h2>
-                <p className="text-xl text-neutral-600 mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8">{t.contact.title}</h2>
+                <p className="text-xl text-muted mb-12">
                     {t.contact.description}
                 </p>
                 <a

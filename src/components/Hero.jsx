@@ -15,7 +15,7 @@ const Hero = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
                 >
-                    <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-neutral-900 leading-[1.1] mb-8">
+                    <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-primary leading-[1.1] mb-8">
                         {t.hero.titlePlain1}<span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-600">{t.hero.titleHighlight1}</span>{t.hero.titlePlain2}<span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-500">{t.hero.titleHighlight2}</span>{t.hero.titlePlain3}
                     </h1>
                 </motion.div>
@@ -24,7 +24,7 @@ const Hero = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.2 }}
-                    className="text-xl md:text-2xl text-neutral-600 max-w-2xl leading-relaxed mb-12"
+                    className="text-xl md:text-2xl text-muted max-w-2xl leading-relaxed mb-12"
                 >
                     {t.hero.description}
                 </motion.p>
@@ -39,7 +39,7 @@ const Hero = () => {
                         View Projects
                         <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </Link> */}
-                    <HashLink smooth to="/#contact" className="px-8 py-4 border border-neutral-200 text-neutral-900 rounded-full font-semibold hover:bg-white hover:border-neutral-300 transition-all flex items-center justify-center">
+                    <HashLink smooth to="/#contact" className="px-8 py-4 border border-secondary text-primary rounded-full font-semibold hover:bg-secondary transition-all flex items-center justify-center">
                         {t.hero.cta}
                     </HashLink>
                 </motion.div>

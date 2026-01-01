@@ -12,11 +12,11 @@ const Projects = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
             >
-                <h1 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-8">{t.projects.title}</h1>
-                <p className="text-xl text-neutral-600 max-w-2xl mb-12">
+                <h1 className="text-4xl md:text-5xl font-bold text-primary mb-8">{t.projects.title}</h1>
+                <p className="text-xl text-muted max-w-2xl mb-12">
                     {t.projects.subtitle}
                 </p>
-                <p className="text-xl text-neutral-600 max-w-2xl mb-12">
+                <p className="text-xl text-muted max-w-2xl mb-12">
                     {t.projects.construction}
                 </p>
             </motion.div>
@@ -24,13 +24,13 @@ const Projects = () => {
             {/*
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {/* Placeholder for more projects - reusing structure implies consistency }
-                <div className="bg-neutral-100 rounded-2xl aspect-[4/3] flex items-center justify-center text-neutral-400">
+                <div className="bg-secondary rounded-2xl aspect-[4/3] flex items-center justify-center text-muted">
                     Project 1
                 </div>
-                <div className="bg-neutral-100 rounded-2xl aspect-[4/3] flex items-center justify-center text-neutral-400">
+                <div className="bg-secondary rounded-2xl aspect-[4/3] flex items-center justify-center text-muted">
                     Project 2
                 </div>
-                <div className="bg-neutral-100 rounded-2xl aspect-[4/3] flex items-center justify-center text-neutral-400">
+                <div className="bg-secondary rounded-2xl aspect-[4/3] flex items-center justify-center text-muted">
                     Project 3
                 </div>
             </div>

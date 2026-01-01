@@ -32,7 +32,7 @@ const PortfolioGrid = () => {
                         transition={{ delay: index * 0.1 }}
                         className="group cursor-pointer"
                     >
-                        <div className="aspect-[4/3] overflow-hidden rounded-2xl bg-neutral-100 mb-4 relative">
+                        <div className="aspect-[4/3] overflow-hidden rounded-2xl bg-secondary mb-4 relative">
                             <img
                                 src={projectImages[project.id]}
                                 alt={project.title}
@@ -42,10 +42,10 @@ const PortfolioGrid = () => {
                         </div>
                         <div className="flex justify-between items-start">
                             <div>
-                                <h3 className="text-xl font-bold text-neutral-900 group-hover:text-indigo-600 transition-colors">
+                                <h3 className="text-xl font-bold text-primary group-hover:text-indigo-600 transition-colors">
                                     {project.title}
                                 </h3>
-                                <p className="text-neutral-500 mt-1">{project.category}</p>
+                                <p className="text-muted mt-1">{project.category}</p>
                             </div>
                         </div>
                     </motion.div>

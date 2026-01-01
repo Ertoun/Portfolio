@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen bg-neutral-50 text-neutral-900 font-sans selection:bg-indigo-500 selection:text-white">
+    <div className="min-h-screen bg-background text-primary font-sans selection:bg-indigo-500 selection:text-white">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
