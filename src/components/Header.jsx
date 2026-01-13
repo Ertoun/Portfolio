@@ -5,7 +5,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import ThemeToggle from './ThemeToggle';
 import portfolioPdf from '../assets/portfolio.pdf';
-import resumePdf from '../assets/resume_UX_Designer.pdf';
+import resumePdf from '../assets/CV-Ertan-OZAYDIN-UXDesigner-Manager.pdf';
 
 const Header = () => {
     const [isOpen, setIsOpen] = React.useState(false);
@@ -57,7 +57,7 @@ const Header = () => {
                     </a>
                     <a
                         href={resumePdf}
-                        download="resume_UX_Designer.pdf"
+                        download="CV-Ertan-OZAYDIN-UXDesigner-Manager.pdf"
                         className="flex items-center gap-2 px-5 py-2.5 bg-background border border-secondary text-primary rounded-full text-sm font-semibold hover:bg-secondary transition-all"
                     >
                         <FileText className="w-4 h-4" />
@@ -104,7 +104,7 @@ const Header = () => {
                             ))}
                             <a
                                 href={portfolioPdf}
-                                download="resume_portfolio.pdf"
+                                download="portfolio.pdf"
                                 className="flex items-center justify-center gap-2 px-4 py-2 bg-accent text-white rounded-full text-sm font-semibold w-full"
                             >
                                 <Download className="w-4 h-4" />
@@ -112,7 +112,7 @@ const Header = () => {
                             </a>
                             <a
                                 href={resumePdf}
-                                download="resume_UX_Designer.pdf"
+                                download="CV-Ertan-OZAYDIN-UXDesigner-Manager.pdf"
                                 className="flex items-center justify-center gap-2 px-4 py-2 bg-background border border-secondary text-primary rounded-full text-sm font-semibold w-full"
                             >
                                 <FileText className="w-4 h-4" />
