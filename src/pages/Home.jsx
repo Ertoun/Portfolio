@@ -1,13 +1,13 @@
 import React from 'react';
 import Hero from '../components/Hero';
-import PortfolioGrid from '../components/PortfolioGrid';
+import ImpactSection from '../components/ImpactSection';
 import Contact from '../components/Contact';
 
 const Home = () => {
     return (
-        <main className="container mx-auto px-4 md:px-8">
+        <main>
             <Hero />
-            <PortfolioGrid />
+            <ImpactSection />
             <Contact />
         </main>
     );

@@ -9,7 +9,7 @@ const Hero = () => {
 
     return (
         <section className="min-h-[80vh] flex flex-col justify-center py-20">
-            <div className="max-w-4xl">
+            <div className="container mx-auto px-4 md:px-8">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}

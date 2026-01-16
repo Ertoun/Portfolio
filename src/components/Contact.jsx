@@ -7,7 +7,7 @@ const Contact = () => {
 
     return (
         <section className="py-20 bg-background" id="contact">
-            <div className="max-w-4xl mx-auto text-center">
+            <div className="container mx-auto px-4 md:px-8 max-w-4xl text-center">
                 <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8">{t.contact.title}</h2>
                 <p className="text-xl text-muted mb-12">
                     {t.contact.description}
