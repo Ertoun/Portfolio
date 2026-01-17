@@ -75,6 +75,7 @@ export const translations = {
         caseStudies: {
             title: 'Case Studies',
             subtitle: 'Deep dives into my process, leadership, and impact.',
+            readStory: 'Read Story',
             landing: {
                 overviewTitle: 'My Approach',
                 overviewText: "I approach every project with a blend of data-driven strategy and creative intuition. My process is iterative, collaborative, and always focused on the user's needs and the business's goals.",
@@ -275,11 +276,12 @@ export const translations = {
                 }
             ],
             sectionCta: "Explorer tous les projets",
-            cta: "Lire l'histoire"
+            cta: "Lire l'étude de cas"
         },
         caseStudies: {
             title: 'Études de cas',
             subtitle: 'Une plongée dans mon processus, mon leadership et mon impact.',
+            readStory: 'Voir l\'étude de cas',
             landing: {
                 overviewTitle: 'Mon approche',
                 overviewText: "J'aborde chaque projet avec un mélange de stratégie basée sur les données et d'intuition créative. Mon processus est itératif, collaboratif et toujours centré sur les besoins de l'utilisateur et les objectifs de l'entreprise.",
@@ -399,9 +401,9 @@ export const translations = {
         },
         contact: {
             title: "Prêt à avoir un impact ?",
-            description: "Du leadership design stratégique à la conception de parcours utilisateurs intuitifs, je suis là pour vous aider à résoudre des problèmes complexes. Actuellement disponible pour freelance et CDI.",
+            description: "Du leadership design stratégique à la conception de parcours utilisateurs intuitifs, je suis là pour vous aider à résoudre des problèmes complexes. Actuellement disponible pour du freelance et en CDI.",
             button: 'Dites bonjour',
-            email: 'hello@ertoun.design',
+            email: 'ertan.ozaydin@gmail.com',
             copy: 'Copier l\'email',
             copied: 'Copié !'
         },

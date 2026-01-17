@@ -192,7 +192,7 @@ const CaseStudyDetail = () => {
                             to={`/case-studies/${nextKey}`}
                             className="group flex items-center gap-4 px-8 py-4 bg-secondary/50 hover:bg-secondary rounded-full transition-all"
                         >
-                            <span>Read Story</span>
+                             <span>{t.caseStudies.readStory}</span>
                             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                         </Link>
                     </div>
