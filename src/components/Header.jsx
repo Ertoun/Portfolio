@@ -14,7 +14,7 @@ const Header = () => {
 
     const links = [
         { name: t.header.home, path: '/' },
-        { name: t.header.projects, path: '/projects' },
+        { name: t.header.caseStudies, path: '/case-studies' },
     ];
 
     return (

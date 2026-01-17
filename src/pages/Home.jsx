@@ -1,14 +1,14 @@
 import React from 'react';
 import Hero from '../components/Hero';
 import ImpactSection from '../components/ImpactSection';
-import Contact from '../components/Contact';
+import ContactCTA from '../components/ContactCTA';
 
 const Home = () => {
     return (
         <main>
             <Hero />
             <ImpactSection />
-            <Contact />
+            <ContactCTA id="contact" />
         </main>
     );
 };

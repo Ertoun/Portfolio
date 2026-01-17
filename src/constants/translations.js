@@ -2,7 +2,7 @@ export const translations = {
     en: {
         header: {
             home: 'Home',
-            projects: 'Projects',
+            caseStudies: 'Case Studies',
             downloadPortfolio: 'Download Portfolio',
             downloadResume: 'Download Resume',
         },
@@ -30,7 +30,7 @@ export const translations = {
                     tags: ["A/B Testing", "Heap Analytics", "User Maps"],
                     imageCaption: "See how we optimized the checkout flow to boost revenue.",
                     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=2000",
-                    link: "/projects"
+                    link: "/case-studies/results"
                 },
                 {
                     id: 'leadership',
@@ -42,7 +42,7 @@ export const translations = {
                     tags: ["Career Ladders", "Mentorship", "Hiring"],
                     imageCaption: "Learn about my approach to scaling design culture.",
                     image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=2000",
-                    link: "/projects"
+                    link: "/case-studies/leadership"
                 },
                 {
                     id: 'scale',
@@ -54,7 +54,7 @@ export const translations = {
                     tags: ["Design Systems", "i18n", "Accessibility"],
                     imageCaption: "Discover how we localized the product for 12 new markets.",
                     image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=2000",
-                    link: "/projects"
+                    link: "/case-studies/scale"
                 },
                 {
                     id: 'product',
@@ -66,60 +66,148 @@ export const translations = {
                     tags: ["Agile/Scrum", "Roadmapping", "Workshops"],
                     imageCaption: "Read the story behind our latest enterprise product launch.",
                     image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=2000",
-                    link: "/projects"
+                    link: "/case-studies/product"
                 }
             ],
-            sectionCta: "Explore all projects",
-            cta: "Read story"
+            sectionCta: "Explore all case studies",
+            cta: "Read full story"
         },
-        projects: {
-            title: 'All Projects',
-            subtitle: 'A collection of my work in UX/UI design, branding, and development.',
-            construction: 'This section is currently under construction. Please check back soon for updates!',
-            items: [
-                {
-                    id: 1,
-                    title: "Brand Identity Redesign",
-                    category: "Branding",
-                    description: "A complete overhaul of the visual identity for a tech startup, focusing on modern aesthetics and approachability. The project included logo design, color palette selection, and comprehensive brand guidelines.",
-                    image: "https://images.unsplash.com/photo-1541506618330-7c369fc759b5?auto=format&fit=crop&q=80&w=2000"
+        caseStudies: {
+            title: 'Case Studies',
+            subtitle: 'Deep dives into my process, leadership, and impact.',
+            landing: {
+                overviewTitle: 'My Approach',
+                overviewText: "I approach every project with a blend of data-driven strategy and creative intuition. My process is iterative, collaborative, and always focused on the user's needs and the business's goals.",
+                methodsTitle: 'Core Methods',
+                methods: [
+                    { title: "Discovery", desc: "User interviews, competitive analysis, and data auditing." },
+                    { title: "Definition", desc: "Problem framing, persona creation, and journey mapping." },
+                    { title: "Design", desc: "Wireframing, prototyping, and high-fidelity UI design." },
+                    { title: "Delivery", desc: "Design systems, developer handoff, and QA." }
+                ],
+                environmentTitle: "Work Environment",
+                environmentText: "I thrive in agile, cross-functional environments where design has a seat at the table. I value transparency, rapid iteration, and a culture of psychological safety.",
+            },
+            nextProject: "Next Case Study",
+            items: {
+                results: {
+                    id: 'results',
+                    title: "Driving Business Growth",
+                    role: "Lead Product Designer",
+                    duration: "8 months",
+                    tags: ["E-commerce", "Optimization", "Data Analysis"],
+                    heroImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=2000",
+                    challenge: {
+                        title: "The Challenge",
+                        content: "The existing checkout flow had a high drop-off rate of 65% at the payment step. Users found the process confusing and lacked trust in the security of the platform. We needed to identify the friction points and redesign the flow to improve conversion without implementing a completely new backend system."
+                    },
+                    solution: {
+                        title: "The Solution",
+                        content: "We conducted extensive usability testing and heatmap analysis to pinpoint exactly where users were getting stuck. Based on these insights, I simplified the form fields, introduced a progress indicator, and added reassuring security badges. We also implemented a guest checkout option to reduce friction for new users."
+                    },
+                    result: {
+                        title: "The Result",
+                        content: "The redesigned checkout flow resulted in a 40% uplift in conversion rate within the first three months. Customer support tickets related to payment issues dropped by 25%. The project also established a new design pattern for forms that was adopted across the entire platform.",
+                        stats: [
+                            { value: "40%", label: "Conversion Uplift" },
+                            { value: "-25%", label: "Support Tickets" },
+                            { value: "$1.2M", label: "Est. Annual Revenue" }
+                        ]
+                    }
                 },
-                {
-                    id: 2,
-                    title: "Design System",
-                    category: "UI/UX Design",
-                    description: "Created a scalable design system for a SaaS platform to ensure consistency across all product interfaces. This reduced development time by 40% and improved UI coherence.",
-                    image: "https://images.unsplash.com/photo-1560461396-ec0ef7bb29dd?auto=format&fit=crop&q=80&w=2000"
+                leadership: {
+                    id: 'leadership',
+                    title: "Scaling Design Culture",
+                    role: "UX Design Manager",
+                    duration: "2 years",
+                    tags: ["Evangelism", "UX Data", "Cross-functional"],
+                    heroImage: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=2000",
+                    challenge: {
+                        title: "The Challenge",
+                        content: "During a rapid growth phase, the main challenge was to prevent design from becoming a bottleneck. I needed to instill a shared user-centric culture across all departments (Engineering, Marketing, and Sales) to ensure product consistency."
+                    },
+                    solution: {
+                        title: "The Solution",
+                        content: "I established 'UX Days' to align all teams with UX best practices and implemented 1-to-1 Design Reviews with developers. Additionally, I created tailored workflows for the Marketing team and pioneered UX data storytelling by building PowerBI dashboards."
+                    },
+                    result: {
+                        title: "The Result",
+                        content: "UX became a core strategic pillar. By presenting UX metrics during All-hands meetings to the entire company, I ensured high visibility for user needs, leading to better-informed business decisions and stronger cross-team synergy.",
+                        stats: [
+                            { value: "100%", label: "Teams Aligned" },
+                            { value: "1-to-1", label: "Dev/Design Sync" },
+                            { value: "Data", label: "PowerBI Driven" }
+                        ]
+                    }
                 },
-                {
-                    id: 3,
-                    title: "Eco-Friendly Packaging",
-                    category: "Print Design",
-                    description: "Sustainable packaging design for an organic skincare line. The design utilizes recycled materials and minimalist graphics to communicate the brand's commitment to the environment.",
-                    image: "https://images.unsplash.com/photo-1482876555840-f31c5ebbff1c?auto=format&fit=crop&q=80&w=2000"
+                scale: {
+                    id: 'scale',
+                    title: "Global Product Localization",
+                    role: "Senior UX Designer",
+                    duration: "1 year",
+                    tags: ["System Design", "Localization", "Accessibility"],
+                    heroImage: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=2000",
+                    challenge: {
+                        title: "The Challenge",
+                        content: "Our product was launching in 12 new markets across Asia and the Middle East. The existing UI wasn't built to handle right-to-left (RTL) languages or variable text lengths. Additionally, the color palette and iconography had not been tested for cultural appropriateness in these new regions."
+                    },
+                    solution: {
+                        title: "The Solution",
+                        content: "I led the creation of a new, flexible design system capable of automatic RTL flipping. We audited the entire component library for accessibility and localization readiness. I collaborated with local experts to refine our visual language, ensuring it resonated with local users while maintaining our brand identity."
+                    },
+                    result: {
+                        title: "The Result",
+                        content: "Successfully launched in all 12 markets on schedule. The platform now supports 2M+ active users globally. The new design system reduced the time required to spin up a new country landing page from 2 weeks to 2 days.",
+                        stats: [
+                            { value: "12", label: "New Markets" },
+                            { value: "2M+", label: "Global Users" },
+                            { value: "100%", label: "Accessibility Score" }
+                        ]
+                    }
                 },
-                {
-                    id: 4,
-                    title: "Finance Dashboard",
-                    category: "Product Design",
-                    description: "A user-centric dashboard for a fintech application, designed to simplify complex data visualization. Key features include customizable widgets and real-time market tracking.",
-                    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=2000"
-                },
-            ]
+                product: {
+                    id: 'product',
+                    title: "Enterprise SaaS Launch",
+                    role: "Product Design Lead",
+                    duration: "1.5 years",
+                    tags: ["Strategy", "Zero to One", "SaaS"],
+                    heroImage: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=2000",
+                    challenge: {
+                        title: "The Challenge",
+                        content: "The company wanted to enter the enterprise market with a new B2B product. We had a broad vision but no concrete requirements. We needed to validate the market need, define the MVP feature set, and design a complex interface that remained intuitive for non-technical users."
+                    },
+                    solution: {
+                        title: "The Solution",
+                        content: "I facilitated a series of design sprints with stakeholders and potential customers to define the product roadmap. We built rapid prototypes to test value propositions. I established a 'customer advisory board' to get continuous feedback throughout the development cycle."
+                    },
+                    result: {
+                        title: "The Result",
+                        content: "The product launched within 6 months, beating the market entry target. We onboarded 15 enterprise clients in the first quarter. The product was praised for its ease of use compared to legacy competitors, helping close deals with Fortune 500 companies.",
+                        stats: [
+                            { value: "6mo", label: "Time-to-Market" },
+                            { value: "15", label: "Enterprise Clients" },
+                            { value: "$500k", label: "Q1 ARR" }
+                        ]
+                    }
+                }
+            }
         },
         contact: {
-            title: "Let's work together.",
-            description: "I'm currently available for freelance projects and open to full-time opportunities.",
+            title: "Ready to make an impact?",
+            description: "From strategic design leadership to crafting intuitive user journeys, I'm here to help you solve complex problems. Currently available for freelance and full-time roles.",
             button: 'Say Hello',
+            email: 'hello@ertoun.design', // Placeholder based on username 'Ertoun'
+            copy: 'Copy Email',
+            copied: 'Copied!'
         },
         footer: {
             rights: 'Design Portfolio. All rights reserved.',
         }
     },
     fr: {
-        header: {
+         header: {
             home: 'Accueil',
-            projects: 'Projets',
+            caseStudies: 'Études de cas',
             downloadPortfolio: 'Télécharger Portfolio',
             downloadResume: 'Télécharger CV',
         },
@@ -129,11 +217,11 @@ export const translations = {
             titlePlain2: ' et ',
             titleHighlight2: 'connectent',
             titlePlain3: '.',
-            description: "Bonjour, je suis UX Designer basé à Paris. Je me spécialise dans la création d'interfaces utilisateur intuitives et de produits numériques agréables.",
+            description: "Bonjour, je suis Ertan, UX Designer basé à Paris. Je me spécialise dans la création d'interfaces utilisateur intuitives et de produits numériques agréables.",
             cta: 'Contactez-moi',
         },
         impact: {
-            title: "Conçu pour l'Impact",
+            title: "Conçu pour l'impact",
             subtitle: "Des résultats mesurables grâce à un leadership design centré sur l'utilisateur.",
             tagsLabel: "Méthodes utilisées",
             tabs: [
@@ -147,7 +235,7 @@ export const translations = {
                     tags: ["A/B Testing", "Analyse Heap", "User Maps"],
                     imageCaption: "Découvrez comment nous avons optimisé le parcours d'achat.",
                     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=2000",
-                    link: "/projects"
+                    link: "/case-studies/results"
                 },
                 {
                     id: 'leadership',
@@ -159,7 +247,7 @@ export const translations = {
                     tags: ["Gestion Carrière", "Mentorat", "Recrutement"],
                     imageCaption: "En savoir plus sur mon approche de la culture design.",
                     image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=2000",
-                    link: "/projects"
+                    link: "/case-studies/leadership"
                 },
                 {
                     id: 'scale',
@@ -171,7 +259,7 @@ export const translations = {
                     tags: ["Systèmes Design", "i18n", "Accessibilité"],
                     imageCaption: "Comment nous avons localisé le produit pour 12 nouveaux marchés.",
                     image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=2000",
-                    link: "/projects"
+                    link: "/case-studies/scale"
                 },
                 {
                     id: 'product',
@@ -183,51 +271,139 @@ export const translations = {
                     tags: ["Agile/Scrum", "Roadmapping", "Ateliers"],
                     imageCaption: "L'histoire derrière notre dernier lancement produit.",
                     image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=2000",
-                    link: "/projects"
+                    link: "/case-studies/product"
                 }
             ],
             sectionCta: "Explorer tous les projets",
             cta: "Lire l'histoire"
         },
-        projects: {
-            title: 'Tous les Projets',
-            subtitle: 'Une collection de mes travaux en design UX/UI, branding et développement.',
-            construction: 'Cette section est actuellement en construction. Revenez bientôt pour les mises à jour !',
-            items: [
-                {
-                    id: 1,
-                    title: "Redesign d'Identité de Marque",
-                    category: "Branding",
-                    description: "Une refonte complète de l'identité visuelle pour une startup technologique, axée sur l'esthétique moderne et l'accessibilité. Le projet comprenait la conception du logo, la sélection de la palette de couleurs et des directives de marque complètes.",
-                    image: "https://images.unsplash.com/photo-1541506618330-7c369fc759b5?auto=format&fit=crop&q=80&w=2000"
+        caseStudies: {
+            title: 'Études de cas',
+            subtitle: 'Une plongée dans mon processus, mon leadership et mon impact.',
+            landing: {
+                overviewTitle: 'Mon approche',
+                overviewText: "J'aborde chaque projet avec un mélange de stratégie basée sur les données et d'intuition créative. Mon processus est itératif, collaboratif et toujours centré sur les besoins de l'utilisateur et les objectifs de l'entreprise.",
+                methodsTitle: 'Méthodes clés',
+                methods: [
+                    { title: "Découverte", desc: "Entretiens utilisateurs, analyse concurrentielle et audit de données." },
+                    { title: "Définition", desc: "Cadrage du problème, cration de personas et cartographie du parcours." },
+                    { title: "Design", desc: "Wireframing, prototypage et conception UI haute fidélité." },
+                    { title: "Livraison", desc: "Systèmes de design, transfert aux développeurs et QA." }
+                ],
+                environmentTitle: "Environnement de travail",
+                environmentText: "Je m'épanouis dans des environnements agiles et interfonctionnels où le design a sa place à la table. Je valorise la transparence, l'itération rapide et une culture de sécurité psychologique.",
+            },
+            nextProject: "Étude suivante",
+            items: {
+                results: {
+                    id: 'results',
+                    title: "Croissance commerciale",
+                    role: "Lead Product Designer",
+                    duration: "8 mois",
+                    tags: ["E-commerce", "Optimisation", "Analyse données"],
+                    heroImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=2000",
+                    challenge: {
+                        title: "Le Défi",
+                        content: "Le flux de paiement existant avait un taux d'abandon élevé de 65%. Les utilisateurs trouvaient le processus confus et manquaient de confiance. Il fallait identifier les points de friction et repenser le flux pour améliorer la conversion sans refondre tout le backend."
+                    },
+                    solution: {
+                        title: "La Solution",
+                        content: "Nous avons mené des tests d'utilisabilité et des analyses de cartes thermiques. J'ai simplifié les formulaires, ajouté un indicateur de progression et des badges de sécurité. Nous avons aussi implémenté une option de paiement invité."
+                    },
+                    result: {
+                        title: "Le Résultat",
+                        content: "Le nouveau flux a entraîné une hausse de 40% du taux de conversion en trois mois. Les tickets de support liés au paiement ont chuté de 25%. Le projet a établi un nouveau modèle de design pour les formulaires.",
+                        stats: [
+                            { value: "40%", label: "Hausse Conversion" },
+                            { value: "-25%", label: "Tickets Support" },
+                            { value: "1.2M€", label: "Revenu Annuel Est." }
+                        ]
+                    }
                 },
-                {
-                    id: 2,
-                    title: "Système de Design",
-                    category: "Design UI/UX",
-                    description: "Création d'un système de design évolutif pour une plateforme SaaS afin d'assurer la cohérence entre toutes les interfaces produit. Cela a réduit le temps de développement de 40% et amélioré la cohérence de l'interface utilisateur.",
-                    image: "https://images.unsplash.com/photo-1560461396-ec0ef7bb29dd?auto=format&fit=crop&q=80&w=2000"
+                leadership: {
+                    id: 'leadership',
+                    title: "Culture design à l'échelle",
+                    role: "UX Design Manager",
+                    duration: "2 ans",
+                    tags: ["Évangélisation", "Data UX", "Collaboration"],
+                    heroImage: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=2000",
+                    challenge: {
+                        title: "Le défi",
+                        content: "Dans une phase de croissance rapide, le design risquait de devenir un simple exécutant. Le défi était d'insuffler une véritable culture utilisateur commune à toutes les équipes (Dev, Marketing, Sales) pour garantir la cohérence du produit."
+                    },
+                    solution: {
+                        title: "La solution",
+                        content: "J'ai instauré les 'UX Days' pour former les équipes aux bonnes pratiques et mis en place des Design Reviews en 1to1 avec les développeurs. J'ai également créé des processus spécifiques pour le marketing et automatisé le suivi de la performance via des dashboards PowerBI."
+                    },
+                    result: {
+                        title: "Le résultat",
+                        content: "Le design est devenu un pilier central des décisions stratégiques. La donnée UX est désormais partagée en Allhands devant toute l'entreprise, garantissant un alignement total entre les objectifs business et l'expérience utilisateur.",
+                        stats: [
+                            { value: "100%", label: "Équipes sensibilisées" },
+                            { value: "1to1", label: "Design/Dev Review" },
+                            { value: "PowerBI", label: "Data-Driven UX" }
+                        ]
+                    }
                 },
-                {
-                    id: 3,
-                    title: "Emballage Écologique",
-                    category: "Design Print",
-                    description: "Design d'emballage durable pour une gamme de soins biologiques. Le design utilise des matériaux recyclés et des graphismes minimalistes pour communiquer l'engagement de la marque envers l'environnement.",
-                    image: "https://images.unsplash.com/photo-1482876555840-f31c5ebbff1c?auto=format&fit=crop&q=80&w=2000"
+                scale: {
+                    id: 'scale',
+                    title: "Localisation de produit globale",
+                    role: "Senior UX Designer",
+                    duration: "2.5 ans",
+                    tags: ["System Design", "Localisation", "Accessibilité"],
+                    heroImage: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=2000",
+                    challenge: {
+                        title: "Le défi",
+                        content: "Notre lancement dans 12 nouveaux marchés nécessitait de supporter les langues RTL et des longueurs de texte variables. La palette de couleurs et l'iconographie devaient aussi être adaptées culturellement."
+                    },
+                    solution: {
+                        title: "La solution",
+                        content: "J'ai dirigé la création d'un système de design flexible capable de basculer automatiquement en RTL. Nous avons audité la bibliothèque pour l'accessibilité et collaboré avec des experts locaux."
+                    },
+                    result: {
+                        title: "Le résultat",
+                        content: "Lancement réussi sur 12 marchés. La plateforme supporte 2M+ utilisateurs. Le nouveau système a réduit le temps de création de landing pages de 2 semaines à 2 jours.",
+                        stats: [
+                            { value: "12", label: "Nouveaux marchés" },
+                            { value: "2M+", label: "Utilisateurs" },
+                            { value: "100%", label: "Score accessibilité" }
+                        ]
+                    }
                 },
-                {
-                    id: 4,
-                    title: "Tableau de Bord Finance",
-                    category: "Design Produit",
-                    description: "Un tableau de bord centré sur l'utilisateur pour une application fintech, conçu pour simplifier la visualisation de données complexes. Les fonctionnalités clés incluent des widgets personnalisables et le suivi du marché en temps réel.",
-                    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=2000"
-                },
-            ]
+                product: {
+                    id: 'product',
+                    title: "Lancement SaaS B2B",
+                    role: "Product Design Lead",
+                    duration: "1.5 ans",
+                    tags: ["Stratégie", "Zéro à Un", "SaaS"],
+                    heroImage: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=2000",
+                    challenge: {
+                        title: "Le défi",
+                        content: "Nous voulions pénétrer le marché B2B avec un nouveau produit SaaS. Nous avions une vision large mais pas de prérequis concrets. Il fallait valider le besoin et définir le MVP."
+                    },
+                    solution: {
+                        title: "La solution",
+                        content: "J'ai animé des design sprints avec les parties prenantes et clients potentiels. Nous avons construit des prototypes rapides pour tester les propositions de valeur."
+                    },
+                    result: {
+                        title: "Le résultat",
+                        content: "Le produit a été lancé en 6 mois. Nous avons signé 15 clients B2B au premier trimestre. Le produit a été salué pour sa facilité d'utilisation.",
+                        stats: [
+                            { value: "6 mois", label: "Time-to-market" },
+                            { value: "15", label: "Clients B2B" },
+                            { value: "500k€", label: "ARR T1" }
+                        ]
+                    }
+                }
+            }
         },
         contact: {
-            title: "Travaillons ensemble.",
-            description: "Je suis actuellement disponible pour des projets freelance et ouvert aux opportunités à temps plein.",
-            button: 'Dites Bonjour',
+            title: "Prêt à avoir un impact ?",
+            description: "Du leadership design stratégique à la conception de parcours utilisateurs intuitifs, je suis là pour vous aider à résoudre des problèmes complexes. Actuellement disponible pour freelance et CDI.",
+            button: 'Dites bonjour',
+            email: 'hello@ertoun.design',
+            copy: 'Copier l\'email',
+            copied: 'Copié !'
         },
         footer: {
             rights: 'Design Portfolio. Tous droits réservés.',

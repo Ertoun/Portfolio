@@ -28,7 +28,7 @@ const ImpactSection = () => {
                 const nextIndex = (currentIndex + 1) % tabs.length;
                 return tabs[nextIndex].id;
             });
-        }, 5000);
+        }, 8500);
 
         return () => clearInterval(timer);
     }, [isPaused, tabs]);
@@ -51,7 +51,7 @@ const ImpactSection = () => {
                         {t.impact.subtitle}
                     </p>
                     <Link 
-                        to="/projects" 
+                        to="/case-studies" 
                         className="inline-flex items-center gap-2 px-6 py-3 bg-accent text-white rounded-full font-semibold hover:bg-accent/90 transition-colors shadow-lg shadow-accent/20"
                     >
                         {t.impact.sectionCta}
@@ -112,7 +112,7 @@ const ImpactSection = () => {
 
                                     {/* Methods / Tags Section */}
                                     {activeTab.tags && (
-                                        <div className="pt-4 border-t border-primary/10 transition-opacity duration-500 delay-100">
+                                        <div className="pt-4 border-t border-primary/10 transition-opacity duration-[850ms] delay-100">
                                             <div className="relative mb-2">
                                                 <div className="absolute left-[-34px] top-0 bottom-0 w-[2px] bg-accent" />
                                                 <h4 className="text-sm font-bold text-primary">
@@ -137,7 +137,7 @@ const ImpactSection = () => {
                     {/* Right Column (Big): Visual Image */}
                     {/* Flex grow to fill remaining space. Aspect ratio needs to handle content well. */}
                     <Link 
-                        to={activeTab.link || "/projects"}
+                        to={activeTab.link || "/case-studies"}
                         className="w-full lg:flex-1 relative rounded-3xl overflow-hidden shadow-2xl bg-background group cursor-pointer block h-[400px] lg:h-auto"
                     >
                         <AnimatePresence mode="wait">
@@ -149,7 +149,7 @@ const ImpactSection = () => {
                                 animate={{ opacity: 1, scale: 1 }}
                                 exit={{ opacity: 0 }}
                                 transition={{ duration: 0.35 }}
-                                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                className="absolute inset-0 w-full h-full object-cover transition-transform duration-[850ms] group-hover:scale-105"
                             />
                         </AnimatePresence>
                         
@@ -161,12 +161,12 @@ const ImpactSection = () => {
                         </div>
 
                          <div className="absolute bottom-0 left-0 right-0 p-8 z-20 flex flex-col items-start justify-end">
-                             <h3 className="text-2xl font-bold text-white mb-2 leading-tight opacity-90 transition-all duration-300 transform group-hover:-translate-y-2">
+                             <h3 className="text-2xl font-bold text-white mb-2 leading-tight opacity-90 transition-all duration-[350ms] transform group-hover:-translate-y-2">
                                 {activeTab.imageCaption}
                             </h3>
                             
                             <span 
-                                className="inline-flex items-center gap-2 text-white font-semibold text-sm opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 delay-75 pointer-events-none"
+                                className="inline-flex items-center gap-2 text-white font-semibold text-sm opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-[350ms] delay-75 pointer-events-none"
                             >
                                 {t.impact.cta}
                                 <ArrowRight className="w-4 h-4" />
@@ -189,9 +189,9 @@ const ImpactSection = () => {
                             <button
                                 key={tab.id}
                                 onClick={() => setActiveTabId(tab.id)}
-                                className={`flex items-center gap-4 p-4 rounded-xl transition-all duration-300 text-left relative group overflow-hidden
+                                className={`flex items-center gap-4 p-4 rounded-xl transition-all duration-[850ms] text-left relative group overflow-hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/50
                                     ${isActive 
-                                        ? 'bg-background shadow-lg scale-[1.02]' 
+                                        ? 'bg-background shadow-lg scale-[1.02] border border-transparent' 
                                         : 'hover:bg-primary/5 opacity-60 hover:opacity-100 border border-transparent'
                                     }
                                 `}
@@ -211,7 +211,7 @@ const ImpactSection = () => {
                                             className="stroke-accent stroke-2 fill-none"
                                             initial={{ pathLength: 0 }}
                                             animate={{ pathLength: 1 }}
-                                            transition={{ duration: 5, ease: "linear" }}
+                                            transition={{ duration: 8, ease: "linear" }}
                                         />
                                     </svg>
                                 )}

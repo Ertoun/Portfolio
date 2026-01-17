@@ -1,7 +1,5 @@
-import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import { motion } from 'framer-motion';
-import { ArrowRight } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
 const Hero = () => {
@@ -35,10 +33,7 @@ const Hero = () => {
                     transition={{ duration: 0.6, delay: 0.4 }}
                     className="flex flex-col sm:flex-row gap-4"
                 >
-                    {/* <Link to="/projects" className="px-8 py-4 bg-neutral-900 text-white rounded-full font-semibold hover:bg-neutral-800 transition-all flex items-center justify-center gap-2 group">
-                        View Projects
-                        <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                    </Link> */}
+
                     <HashLink smooth to="/#contact" className="px-8 py-4 border border-secondary text-primary rounded-full font-semibold hover:bg-secondary transition-all flex items-center justify-center">
                         {t.hero.cta}
                     </HashLink>
