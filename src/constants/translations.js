@@ -196,7 +196,7 @@ export const translations = {
             title: "Ready to make an impact?",
             description: "From strategic design leadership to crafting intuitive user journeys, I'm here to help you solve complex problems. Currently available for freelance and full-time roles.",
             button: 'Say Hello',
-            email: 'hello@ertoun.design', // Placeholder based on username 'Ertoun'
+            email: 'ertan.ozaydin@gmail.com',
             copy: 'Copy Email',
             copied: 'Copied!'
         },

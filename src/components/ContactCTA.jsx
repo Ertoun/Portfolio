@@ -8,7 +8,7 @@ const ContactCTA = ({ id, className = "" }) => {
     const [copied, setCopied] = useState(false);
     
     // Fallback email if not in translations
-    const email = t.contact?.email || 'hello@example.com';
+    const email = t.contact?.email || 'ertan.ozaydin@gmail.com';
 
     const handleCopy = (e) => {
         e.preventDefault();
