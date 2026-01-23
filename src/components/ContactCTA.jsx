@@ -29,7 +29,7 @@ const ContactCTA = ({ id, className = "" }) => {
                 </p>
                 
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <a 
+                    <a id='send-mail-button'
                         href={`mailto:${email}`}
                         className="inline-flex items-center gap-3 px-8 py-3.5 bg-primary text-background rounded-full font-bold text-base hover:opacity-90 hover:scale-[1.02] transition-all shadow-md active:scale-95"
                     >
@@ -37,7 +37,7 @@ const ContactCTA = ({ id, className = "" }) => {
                         <Mail className="w-5 h-5" />
                     </a>
 
-                    <button
+                    <button id='copy-mail-button'
                         onClick={handleCopy}
                         className="inline-flex items-center gap-2 px-6 py-3.5 bg-secondary/30 hover:bg-secondary/50 border border-secondary text-sm font-semibold rounded-full transition-all group relative overflow-hidden active:scale-95"
                         title={t.contact.copy}
