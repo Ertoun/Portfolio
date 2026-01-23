@@ -34,7 +34,7 @@ const Hero = () => {
                     className="flex flex-col sm:flex-row gap-4"
                 >
 
-                    <HashLink smooth to="/#contact" className="px-8 py-4 border border-tertiary text-primary rounded-full font-semibold hover:bg-secondary transition-all flex items-center justify-center">
+                    <HashLink id='hero-cta-button' smooth to="/#contact" className="px-8 py-4 border border-tertiary text-primary rounded-full font-semibold hover:bg-secondary transition-all flex items-center justify-center">
                         {t.hero.cta}
                     </HashLink>
                 </motion.div>
