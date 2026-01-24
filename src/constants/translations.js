@@ -257,7 +257,7 @@ export const translations = {
                     description: "Créer des expériences qui résonnent à travers les cultures. Mon travail a été déployé pour des millions d'utilisateurs, nécessitant des systèmes de design robustes et accessibles.",
                     stat: { value: "2M+", label: "Utilisateurs Actifs" },
                     stat2: { value: "12", label: "Langues Supportées" },
-                    tags: ["Systèmes Design", "i18n", "Accessibilité"],
+                    tags: ["Système de Design", "i18n", "Accessibilité"],
                     imageCaption: "Comment nous avons localisé le produit pour 12 nouveaux marchés.",
                     image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=2000",
                     link: "/case-studies/scale"
@@ -288,9 +288,9 @@ export const translations = {
                 methodsTitle: 'Méthodes clés',
                 methods: [
                     { title: "Découverte", desc: "Entretiens utilisateurs, analyse concurrentielle et audit de données." },
-                    { title: "Définition", desc: "Cadrage du problème, cration de personas et cartographie du parcours." },
+                    { title: "Définition", desc: "Cadrage du problème, création de personas et cartographie du parcours." },
                     { title: "Design", desc: "Wireframing, prototypage et conception UI haute fidélité." },
-                    { title: "Livraison", desc: "Systèmes de design, transfert aux développeurs et QA." }
+                    { title: "Livraison", desc: "Système de design, transfert aux développeurs et QA." }
                 ],
                 environmentTitle: "Environnement de travail",
                 environmentText: "Je m'épanouis dans des environnements agiles et interfonctionnels où le design a sa place à la table. Je valorise la transparence, l'itération rapide et une culture de sécurité psychologique.",
@@ -352,7 +352,7 @@ export const translations = {
                     title: "Localisation de produit globale",
                     role: "Senior UX Designer",
                     duration: "2.5 ans",
-                    tags: ["System Design", "Localisation", "Accessibilité"],
+                    tags: ["Système de Design", "Localisation", "Accessibilité"],
                     heroImage: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=2000",
                     challenge: {
                         title: "Le défi",
@@ -377,7 +377,7 @@ export const translations = {
                     title: "Lancement SaaS B2B",
                     role: "Product Design Lead",
                     duration: "1.5 ans",
-                    tags: ["Stratégie", "Zéro à Un", "SaaS"],
+                    tags: ["Stratégie", "Zéro à un", "SaaS"],
                     heroImage: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=2000",
                     challenge: {
                         title: "Le défi",
