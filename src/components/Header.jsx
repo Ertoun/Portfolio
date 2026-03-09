@@ -5,12 +5,18 @@ import { Link, useLocation } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import ThemeToggle from './ThemeToggle';
 import portfolioPdf from '../assets/portfolio.pdf';
-import resumePdf from '../assets/CV-Ertan-OZAYDIN-UXDesigner-Manager.pdf';
+import resumePdfFR from '../assets/CV Ertan OZAYDIN - UX DESIGN - French.pdf';
+import resumePdfEN from '../assets/CV Ertan OZAYDIN - UX DESIGN - English.pdf';
 
 const Header = () => {
     const [isOpen, setIsOpen] = React.useState(false);
     const location = useLocation();
     const { t, language, toggleLanguage } = useLanguage();
+
+    const resumePdf = language === 'en' ? resumePdfEN : resumePdfFR;
+    const resumeFileName = language === 'en'
+        ? 'CV Ertan OZAYDIN - UX DESIGN - English.pdf'
+        : 'CV Ertan OZAYDIN - UX DESIGN - French.pdf';
 
     const links = [
         { name: t.header.home, path: '/' },
@@ -58,7 +64,7 @@ const Header = () => {
                     </a>
                     <a
                         href={resumePdf}
-                        download="CV-Ertan-OZAYDIN-UXDesigner-Manager.pdf"
+                        download={resumeFileName}
                         className="flex items-center gap-2 px-5 py-2.5 bg-background border border-secondary text-primary rounded-full text-sm font-semibold hover:bg-secondary transition-all"
                     >
                         <FileText className="w-4 h-4" />
@@ -113,7 +119,7 @@ const Header = () => {
                             </a>
                             <a
                                 href={resumePdf}
-                                download="CV-Ertan-OZAYDIN-UXDesigner-Manager.pdf"
+                                download={resumeFileName}
                                 className="flex items-center justify-center gap-2 px-4 py-2 bg-background border border-secondary text-primary rounded-full text-sm font-semibold w-full"
                             >
                                 <FileText className="w-4 h-4" />
