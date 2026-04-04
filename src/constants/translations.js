@@ -274,16 +274,6 @@ export const translations = {
             "A privacy-focused, open-source video player for browsing public Reels without algorithmic noise or tracking. Features manual playlist curation, direct links back to creators, and zero data storage. Fully architected, designed, and built solo — frontend hosted on GitHub Pages, backend on Render.",
         },
         {
-          id: "secureno",
-          title: "SecuReno",
-          tags: ["Vite", "React", "TailwindCSS", "Netlify"],
-          solo: true,
-          githubUrl: null,
-          liveUrl: "https://secureno.fr/",
-          description:
-            "A professional showcase website for a locksmith and glazier service. Features a bilingual UI, an appointment booking section, an image carousel, and a legal mentions modal. Every pixel was designed by me — the site was shipped fully solo, from initial wireframe to production deployment on Netlify.",
-        },
-        {
           id: "antarbatiment",
           title: "Antar Bâtiment",
           tags: ["Vite", "React", "TailwindCSS", "Netlify"],
@@ -292,7 +282,7 @@ export const translations = {
           liveUrl: "https://antarbatiment.fr/",
           description:
             "A clean showcase site for a Paris-based general building company. Highlights the company's services, client testimonials, and contact details with an email submission form. Designed and built solo, with a focus on simplicity and trust-building — Netlify-ready out of the box.",
-        },
+        }
       ],
     },
     contact: {
@@ -582,16 +572,6 @@ export const translations = {
             "Un lecteur vidéo open-source centré sur la vie privée, pour visionner des Reels publics sans algorithmes ni tracking. Inclut la curation manuelle de playlists, des liens directs vers les créateurs et zéro stockage de données. Entièrement architecturé, designé et développé en solo — frontend sur GitHub Pages, backend sur Render.",
         },
         {
-          id: "secureno",
-          title: "SecuReno",
-          tags: ["Vite", "React", "TailwindCSS", "Netlify"],
-          solo: true,
-          githubUrl: null,
-          liveUrl: "https://secureno.fr/",
-          description:
-            "Site vitrine professionnel pour un service de serrurerie et vitrerie. Interface bilingue, section prise de rendez-vous, carrousel d'images et modal de mentions légales. Chaque pixel a été designé par moi — livré intégralement en solo, du wireframe au déploiement en production sur Netlify.",
-        },
-        {
           id: "antarbatiment",
           title: "Antar Bâtiment",
           tags: ["Vite", "React", "TailwindCSS", "Netlify"],
@@ -600,7 +580,7 @@ export const translations = {
           liveUrl: "https://antarbatiment.fr/",
           description:
             "Site vitrine pour une entreprise générale du bâtiment basée à Paris. Met en avant les services, les témoignages clients et les coordonnées avec un formulaire de contact. Conçu et développé en solo, avec un focus sur la simplicité et l'instauration de confiance — compatible Netlify dès le départ.",
-        },
+        }
       ],
     },
     contact: {
