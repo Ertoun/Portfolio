@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import CaseStudies from './pages/CaseStudies';
 import CaseStudyDetail from './pages/CaseStudyDetail';
 import Works from './pages/Works';
+import CampaignVSVC from './pages/CampaignVSVC';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
@@ -15,6 +16,7 @@ function App() {
         <Route path="/case-studies" element={<CaseStudies />} />
         <Route path="/case-studies/:id" element={<CaseStudyDetail />} />
         <Route path="/works" element={<Works />} />
+        <Route path="/vsvc" element={<CampaignVSVC />} />
       </Routes>
       <Footer />
     </div>
